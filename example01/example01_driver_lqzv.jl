@@ -14,7 +14,7 @@ while idx <= length(npars)
 
   results = psim_serialmc_vrf(tasks)
 
-  outfile = joinpath(OUTDIR, "example02_hmcda")
+  outfile = joinpath(OUTDIR, "example01_hmcda")
   outfile *= "_n"*@sprintf("%03d", npars[idx]) 
   outfile *= "_a"*@sprintf("%.3f", a[idx])*"_lqzv"
   writedlm_vrf(results, outfile, ' ')
